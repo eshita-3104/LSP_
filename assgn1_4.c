@@ -6,7 +6,7 @@
 
 int main(int argc, char *argv[])
 {
-    struct stat sobj;
+    struct stat obj;
 
     if(argc != 2)
     {
@@ -14,16 +14,14 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-    stat(argv[1],&sobj);
+    stat(argv[1],&obj);
 
-    printf("File name : %s\n",argv[1]);
-    printf("File size is : %d\n",sobj.st_size);
-    printf("Number of links : %d\n",sobj.st_nlink);
-    printf("Inode number : %d\n",sobj.st_ino);
-    printf("File system number : %d\n",sobj.st_dev);
-    printf("Number of blocks : %d\n",sobj.st_blocks);
+    printf("File name=%s\n",argv[1]);
+    printf("File size is=%d\n",sobj.st_size);
+    printf("Number of links=%d\n",sobj.st_nlink);
+    printf("Inode number=%d\n",sobj.st_ino);
+    printf("File system number=%d\n",sobj.st_dev);
+    printf("Number of blocks=%d\n",sobj.st_blocks);
 
     return 0;
 }
-
-//assg 1 ans 4
