@@ -29,5 +29,3 @@ int main(int argc, char *argv[])
     
     return 0;
 }
-
-//ass 1 ans 1
