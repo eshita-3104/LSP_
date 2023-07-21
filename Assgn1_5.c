@@ -6,7 +6,7 @@
 int main(int argc, char *argv[])
 {
     int fd = 0;
-    int Ret = 0;
+    int ret_value = 0;
     char *Buffer = NULL;
 
     if(argc != 3)
@@ -24,8 +24,8 @@ int main(int argc, char *argv[])
 
     Buffer = (char *)malloc(sizeof(atoi(argv[2])));
 
-    Ret = read(fd,Buffer,atoi(argv[2]));
-    if(Ret == 0)
+    ret_value = read(fd,Buffer,atoi(argv[2]));
+    if(ret_value == 0)
     {
         printf("Unable to read data from file\n");
         return -1;
