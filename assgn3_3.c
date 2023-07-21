@@ -31,5 +31,3 @@ int main(int argc, char *argv[])
     closedir(dp);
     return 0;
 }
-
-//ass 3 ans 3   
