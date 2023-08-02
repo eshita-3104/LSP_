@@ -4,8 +4,6 @@
 #include<fcntl.h>
 #include<pthread.h>
 
-//vodi * ______(void * ____)
-//{}
 void * ThreadProc(void *ptr) 
 {
 	printf("Enter the value:");
